@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Código 2FA</title>
+  <style>
+      body {
+          font-family: Arial, sans-serif;
+          background-color: #f4f4f4;
+          margin: 0;
+          padding: 0;
+      }
+
+      .container {
+          max-width: 600px;
+          margin: 20px auto;
+          background: #ffffff;
+          padding: 20px;
+          border-radius: 8px;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .header {
+          text-align: center;
+          padding: 10px 0;
+      }
+
+      .header img {
+          max-width: 120px;
+      }
+
+      .header h1 {
+          font-size: 24px;
+          color: #333333;
+      }
+
+      .content {
+          text-align: center;
+          color: #333333;
+      }
+
+      .content p {
+          font-size: 16px;
+          line-height: 1.5;
+      }
+
+      .code {
+          font-size: 24px;
+          font-weight: bold;
+          background: #f4f4f4;
+          padding: 10px;
+          border: 1px dashed #cccccc;
+          border-radius: 4px;
+          margin: 20px auto;
+          display: inline-block;
+          color: #ff5722;
+      }
+
+      .footer {
+          text-align: center;
+          font-size: 12px;
+          color: #888888;
+          margin-top: 20px;
+      }
+
+      .footer a {
+          color: #ff5722;
+          text-decoration: none;
+      }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <img src="https://picsum.photos/200/100" alt="Logo">
+    <h1>Seu Código de Verificação</h1>
+  </div>
+  <div class="content">
+    <p>Olá, {{name}}!</p>
+    <p>Use o código abaixo para acessar sua conta. O código expira em 5 minutos.</p>
+    <div class="code">{{code}}</div>
+    <p>Se você não solicitou este código, por favor, ignore este email.</p>
+  </div>
+  <div class="footer">
+    <p>Este é um email automático. Não responda.</p>
+    <p>Precisa de ajuda? <a href="mailto:support@exemplo.com">Entre em contato conosco</a>.</p>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:latest
+    container_name: postgres_teste_tecnico
+    restart: always
+    ports:
+      - '5432:5432'
+    environment:
+      POSTGRES_USER: teste_tecnico_mediccont
+      POSTGRES_PASSWORD: teste_tecnico_mediccont
+      POSTGRES_DB: teste_tecnico_mediccont
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
+    driver: local
